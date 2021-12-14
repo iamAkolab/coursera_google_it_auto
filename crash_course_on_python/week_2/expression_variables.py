@@ -9,3 +9,6 @@
 
 print(type(input()))
 # prints the data type of the input
+
+# Variables are names that we give to certain values in our programs. 
+# Those values can be of any data type; numbers, strings or even the results of operations. 

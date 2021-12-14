@@ -12,3 +12,6 @@ print(type(input()))
 
 # Variables are names that we give to certain values in our programs. 
 # Those values can be of any data type; numbers, strings or even the results of operations. 
+
+# Think of variables as containers for data. When you create a variable in your code, your computer reserves a chunk of its own memory to store that value. 
+# This lets the computer access the variable later to read or modify the value

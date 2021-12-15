@@ -1,3 +1,4 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Figure out what's the relationship between the strings "cat" and "Cat" by replacing the plus sign with comparison operators.
 
 print("cat" < "Cat")
@@ -21,6 +22,7 @@ Lastly, the not operator simply inverts the value of the statement immediately f
 So if a statement evaluates to True, and we put the not operator in front of it, it would become False.
 '''
 
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Branching
 '''
  we can dive right into how to use them in our scripts to perform different actions based on their values. 
@@ -49,9 +51,11 @@ def is_positive(number):
   if statement was evaluated as false. You can include multiple elif statements to build complex branching in your code to do all kinds of powerful things!
   '''
     
-'''
-###
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Comparison operators
+'''
 a == b: a is equal to b
 a != b: a is different than b
 a < b: a is smaller than b
@@ -64,3 +68,4 @@ a and b: True if both a and b are True. False otherwise.
 a or b: True if either a or b or both are True. False if both are False.
 not a: True if a is False, False if a is True.
 '''
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

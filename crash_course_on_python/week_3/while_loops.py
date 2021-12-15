@@ -52,7 +52,8 @@ while not valid_username(username):
 
 count_down(3)
 
- ###################################
+###################################
+  
 def smallest_prime_factor(x):
     """Returns the smallest prime number that is a divisor of x"""
     # Start checking with 2, then move up one by one
@@ -61,9 +62,45 @@ def smallest_prime_factor(x):
         if x % n == 0:
            return n
         n += 1
-
-
-
-        
+       
 print(smallest_prime_factor(12)) # should be 2
 print(smallest_prime_factor(15)) # should be 3
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Infinite loops and Code Blocks
+# Another easy mistake that can happen when using loops is introducing an infinite loop. 
+# An infinite loop means the code block in the loop will continue to execute and never stop. 
+# This can happen when the condition being evaluated in a while loop doesn't change. 
+# Pay close attention to your variables and what possible values they can take. Think about unexpected values, like zero.
+
+In the Coursera code blocks, you may see an error message that reads "Evaluation took more than 5 seconds to complete." This means that the code encountered an infinite loop, and it timed out after 5 seconds. You should take a closer look at the code and variables to spot where the infinite loop is.
+###################################
+# The following code causes an infinite loop. Can you figure out what’s missing and how to fix it?
+
+def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+
+print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line) 
+
+# fixed
+def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+		n += 1
+
+print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line) 
+'''
+Here is your output:
+1
+2
+3
+4
+5
+
+Great work! You've managed to fix the error in the code that was causing an infinite loop!
+'''

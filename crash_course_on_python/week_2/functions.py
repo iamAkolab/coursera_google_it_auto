@@ -1,8 +1,4 @@
-def print_seconds(hours, minutes, seconds):
-    print(hours*3600 + minutes *60 + seconds)
-
-print_seconds(1,2,3)
-
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 '''
 We start a function definition with the def keyword, followed by the name we want to give our function. 
 After the name, we have the parameters, also called arguments, for the function enclosed in parentheses. 
@@ -18,7 +14,12 @@ The first line that’s no longer indented is the boundary of the function body.
 It’s up to you how many spaces you use when indenting -- just make sure to be consistent. 
 So if you choose to indent with four spaces, you need to use four spaces everywhere in your code.
 '''
+def print_seconds(hours, minutes, seconds):
+    print(hours*3600 + minutes *60 + seconds)
 
+print_seconds(1,2,3)
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def get_seconds(hours, minutes, seconds):
   return 3600*hours + 60*minutes + seconds
 
@@ -35,8 +36,8 @@ print(result)
 
 # None is a very special data type in Python used to indicate that things are empty or that they return nothing.
 
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## CODE REUSE
-
 '''
 In this code, identify the repeated pattern and replace it with a function called month_days, that receives the name of the month and the number of days in that month 
 as parameters. Adapt the rest of the code so that the result is the same. Confirm your results by making a function call with the correct parameters for both months listed.
@@ -61,3 +62,4 @@ def rectangle_area(base, height):
 	print("The area is " + str(area))
 	
 rectangle_area(5,6)
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

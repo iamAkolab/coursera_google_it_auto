@@ -1,3 +1,4 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Data Types
 
 # In Python, text in between quotes -- either single or double quotes -- is a string data type. 
@@ -45,6 +46,7 @@ average = sum/amount
 
 print( "The average size is: " + str(average))
 
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 '''
  Implicit conversion is where the interpreter helps us out and automatically converts one data type into another, without having to explicitly tell it to do so.
 
@@ -53,3 +55,4 @@ We used this in our video example when we wanted to print a number alongside som
 Before we could do that, we needed to call the str() function to convert the number into a string. 
 Once the number was explicitly converted to a string, we could join it with the rest of our textual string and print the result.
 ''
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

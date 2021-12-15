@@ -1,3 +1,4 @@
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Anatomy of a While Loop
 # A while loop will continuously execute code depending on the value of a condition. It begins with the keyword while, 
 # followed by a comparison to be evaluated, then a colon. On the next line is the code block to be executed, indented to the right. 

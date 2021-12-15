@@ -37,4 +37,19 @@ Apples_&_oranges is invalid because it uses the special character uppers hand.
 Last thing, remember that precision is important when programming. 
 Python variables are case sensitive, so capitalization matters. 
 Lowercase name, uppercase name and all caps name are all valid and different variable names, and that rule on variables is invariable.
-"""
+'''
+
+sum = 2048 + 4357 + 97658 + 125 + 8
+amount = 5
+average = sum/amount
+
+print( "The average size is: " + str(average))
+
+'''
+ Implicit conversion is where the interpreter helps us out and automatically converts one data type into another, without having to explicitly tell it to do so.
+
+By contrast, explicit conversion is where we manually convert from one data type to another by calling the relevant function for the data type we want to convert to. 
+We used this in our video example when we wanted to print a number alongside some text. 
+Before we could do that, we needed to call the str() function to convert the number into a string. 
+Once the number was explicitly converted to a string, we could join it with the rest of our textual string and print the result.
+''

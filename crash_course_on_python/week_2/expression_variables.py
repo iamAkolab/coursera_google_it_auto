@@ -15,3 +15,26 @@ print(type(input()))
 
 # Think of variables as containers for data. When you create a variable in your code, your computer reserves a chunk of its own memory to store that value. 
 # This lets the computer access the variable later to read or modify the value
+
+base = 5
+height = 3
+area = (base * height)/2
+
+print(area)
+
+# Generally, you can name variables whatever you like but there are some restrictions. 
+# First, you shouldn't use as variable names any of the key words or functions that Python reserves for its own, like print. 
+# Using these reserved terms will make your program confusing to read and will result in errors. 
+# Python also has some restrictions on the characters you can use to define a variable. 
+# Variable names can't have any spaces and they must start with either a letter or an underscore. Also, they can only be made up of letters, numbers and underscores.
+
+'''
+I_am_a_variable is the valid variable name.
+I_am_a_variable2 is also a valid variable name. 
+1_is_a_number is invalid because variable names must start with a letter or underscore. 
+Apples_&_oranges is invalid because it uses the special character uppers hand. 
+
+Last thing, remember that precision is important when programming. 
+Python variables are case sensitive, so capitalization matters. 
+Lowercase name, uppercase name and all caps name are all valid and different variable names, and that rule on variables is invariable.
+"""

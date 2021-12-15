@@ -1,3 +1,5 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 print('Hello World')
 
 #####################################
@@ -7,6 +9,8 @@ thing = "Danger"
 print(color + " is the color of " + thing)
 
 #####################################
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 """
 Arithmetic operators
 Python can operate with numbers using the usual mathematical operators, and some special operators, too. These are all of them (we'll explore the last two in later videos).
@@ -25,3 +29,4 @@ a // b = The integer part of the integer division of a by b
 
 a % b = The remainder part of the integer division of a by b
 """
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

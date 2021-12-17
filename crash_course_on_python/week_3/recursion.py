@@ -48,4 +48,26 @@ factorial(4)
 
 print(sum_positive_numbers(3)) # Should be 6
 print(sum_positive_numbers(5)) # Should be 15
+
+# 
+'''
+Let's say that you need to write a tool that goes through a bunch of directories in your computer and calculates how many files are contained in each. 
+When listing the files inside a directory, you might find subdirectories inside them and you'd want to count the files in those subdirectories as well. 
+This is a great time to use recursion. The base case would be a directory with no subdirectories. For this case, the function would just return the amount of files. 
+The recursive case would be calling the recursive function for each of the contained subdirectories. 
+The return value of a given function call would be the sum of all the files in that directory plus all the files in the contained subdirectories. 
+A directory of files that can contain other directories is an example of a recursive structure. 
+Because directories can contain subdirectories that contain subdirectories that contain subdirectories, and so on. 
+When operating over recursive structure, it's usually easier to use recursive functions than for or while loops. 
+
+Another IT-focused example of a recursive structure is anything that deals with groups of users that can contain other groups. 
+We see this situation a lot when using administrative tools like active directory or LDAP. Say your group management software allows you to create groups that have
+both users and other groups as their members. And you want to list all human users that are part of a given group. Here you would use a recursive function to go 
+through the groups. The base case would be a group that only includes users listing all of them. The recursive case would mean going through all the groups contained 
+listing all the users in them and then listing any users contained in the current group.
+
+It's important to call out that in some languages there's a maximum amount of recursive calls you can use. 
+In Python by default, you can call a recursive function 1,000 times until you reach the limit. 
+That's fine for things like subdirectories or user groups that aren't thousands of levels deep.
+'''
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

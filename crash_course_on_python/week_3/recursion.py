@@ -17,9 +17,18 @@ Well, in programming, recursion is a way of doing a repetitive task by having a 
 A recursive function calls itself usually with a modified parameter until it reaches a specific condition. 
 This condition is called the base case. In our earlier examples, the base case would be the smallest Russian doll or the person at the front of the queue. 
 
-"""
+A recursive function must include a recursive case and base case. The recursive case calls the function again, with a different value. 
+The base case returns a value without calling the same function.
 
-#################################
+A recursive function will usually have this structure:
+"""
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
+    
+    
+############################################################################
 def factorial(n):
   print("Factorial called with " + str(n))
   if n < 2:
@@ -31,7 +40,7 @@ def factorial(n):
 
 factorial(4)
   
-  #################################
+  ####################################################################################################################
   '''
   The function sum_positive_numbers should return the sum of all positive numbers between the number n received and 1. 
   For example, when n is 3 it should return 1+2+3=6, and when n is 5 it should return 1+2+3+4+5=15. Fill in the gaps to make this work:

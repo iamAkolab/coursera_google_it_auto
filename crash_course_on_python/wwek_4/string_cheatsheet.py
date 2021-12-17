@@ -19,3 +19,30 @@ string.split() / string.split(delimiter) Returns a list of substrings that were 
 string.replace(old, new) Returns a new string where all occurrences of old have been replaced by new.
 delimiter.join(list of strings) Returns a new string with all the strings joined by the delimiter 
 '''
+
+## Formatting Strings Cheat Sheet
+# Using the format() method
+The format method returns a copy of the string where the {} placeholders have been replaced with the values of the variables. These variables are converted to strings if they weren't strings already. 
+Empty placeholders are replaced by the variables passed to format in the same order.
+
+# "{var1} {var2}".format(var1=value1, var2=value2)
+# "{:exp1} {:exp2}".format(value1, value2)
+
+# {:d} integer value
+'{:d}'.format(10.5) → '10'
+
+-----------------------------------------------------------------------------------------------------------
+Expr         |           Meaning                                     |   Example
+-----------------------------------------------------------------------------------------------------------
+{:d}         |  integer value                                        |     '{:d}'.format(10.5) → '10'
+-----------------------------------------------------------------------------------------------------------
+{:.2f}       |  floating point with that many decimals               |    '{:.2f}'.format(0.5) → '0.50'
+-----------------------------------------------------------------------------------------------------------
+{:.2s}       |  string with that many characters                     |    '{:.2s}'.format('Python') → 'Py'
+-----------------------------------------------------------------------------------------------------------
+{:<6s}       |  string aligned to the left that many spaces          |    '{:<6s}'.format('Py') → 'Py    '
+-----------------------------------------------------------------------------------------------------------
+{:>6s}       |  string aligned to the right that many spaces         |    '{:>6s}'.format('Py') → '    Py'
+-----------------------------------------------------------------------------------------------------------
+{:^6s}       |  string centered in that many spaces                  |    '{:^6s}'.format('Py') → '  Py  '
+-----------------------------------------------------------------------------------------------------------

@@ -69,3 +69,21 @@ golden = Apple()
 golden.color = "Yellow"
 golden.flavor = "Soft"
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class Flower:
+  color = "" 
+
+rose = Flower()
+rose.color = "red" 
+
+violet = Flower() 
+violet.color = "blue" 
+
+this_pun_is_for_you = " this poem is for you" 
+
+print("Roses are {},".format(rose.color))
+print("violets are {},".format(violet.color))
+print(this_pun_is_for_you) 
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

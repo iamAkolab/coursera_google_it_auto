@@ -19,9 +19,9 @@ hamlet.name = "Hamlet"
 hamlet.speak()
 # Oink! I'm Hamlet! Oink!
 
-'''
-Create a Dog class with dog_years based on the Piglet class shown before (one human year is about 7 dog years).
-'''
+
+# Create a Dog class with dog_years based on the Piglet class shown before (one human year is about 7 dog years).
+
 class Dog:
   years = 0
   def dog_years(self) :

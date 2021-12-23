@@ -17,3 +17,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 15084
 
 '''
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Interpreted languages trade off slightly slower runtime performance—removing the need for compiling—by using programs called interpreters to execute the code.

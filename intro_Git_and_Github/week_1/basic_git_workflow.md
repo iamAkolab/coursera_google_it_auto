@@ -23,7 +23,7 @@ $ git status
 the file is untracked
 
 $ git add all_checks.py
-# move from untracked to stage status and a change it from modified stage to staged state
+ move from untracked to stage status and a change it from modified stage to staged state
 
 $ git commit 
 then add comments with nano 'create an empty all_checks.py'
@@ -57,7 +57,7 @@ def main():
 main
 '''
 
-### Anatomy of a Commit Message ####
+# Anatomy of a Commit Message 
  A commit message is generally broken up into a few sections. The first line is a short summary of the commit followed by a blank line. This is followed by a full description of the changes which details why they're necessary and anything that might be especially interesting about them or difficult to understand. When you run the git commit command, Git will open up a text editor of your choice so you can write your commit message
  
  

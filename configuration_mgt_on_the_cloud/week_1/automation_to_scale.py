@@ -1,1 +1,4 @@
-$
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 
+Being able to automate the installation of new software, the provisioning of new workstations or the configuration of a new server can make a big difference even when you're the only person in your IT department
+like what we mean when we talk about scale and how we can use configuration management to maintain the computers in our fleet, and how we can all benefit from treating our infrastructure as code. These concepts are the building blocks for letting us manage a growing number of devices without having to grow the team in charge of them. We'll then get to our first taste of Puppet, the configuration management tool that we'll be teaching you throughout this course. We'll check out a bunch of different examples to see what Puppet rules look like. We'll also learn about the underlying concepts and how you can get it to do the heavy lifting for yo

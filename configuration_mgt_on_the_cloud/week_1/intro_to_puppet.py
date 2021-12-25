@@ -23,17 +23,17 @@ class sudo {
 }
 
 
-'''
-Puppet will determine the type of operating system being used and select the right tool to perform the package installation. On Linux distributions, there are several package 
-management systems like APT, Yum, and DNF. Puppet will also determine which package manager should be used to install the package. On Mac OS, there's a few different available 
-providers depending on where the package is coming from. The Apple Provider is used for packages that are part of the OS, while the MacPorts provider is used for packages that come
-from the MacPorts Project. For Windows, we'll need to add an extra attribute to our rule, stating where the installer file is located on the local desk or a network mounted resource.
 
-uppet will then execute the installer and make sure that it finishes successfully. If you use Chocolatey to manage your windows packages, you can add an extra Chocolatey provider to
-Puppet to support that. We'll add a link to more information about this in our next reading. Using rules like this one, we can get puppet to do a lot more than just install packages
-for us. We can add, remove, or modify configuration files stored in the system, or change registry entries on Windows. We can also enable, disable, start, or stop the services 
-that run on our computer. We can configure crone jobs, the scheduled tasks, add, remove, or modify Users and Groups or even execute external commands, if that's what we need
-'''
+# Puppet will determine the type of operating system being used and select the right tool to perform the package installation. On Linux distributions, there are several package 
+# management systems like APT, Yum, and DNF. Puppet will also determine which package manager should be used to install the package. On Mac OS, there's a few different available 
+# providers depending on where the package is coming from. The Apple Provider is used for packages that are part of the OS, while the MacPorts provider is used for packages that come
+# from the MacPorts Project. For Windows, we'll need to add an extra attribute to our rule, stating where the installer file is located on the local desk or a network mounted resource.
+
+# Puppet will then execute the installer and make sure that it finishes successfully. If you use Chocolatey to manage your windows packages, you can add an extra Chocolatey provider to
+# Puppet to support that. We'll add a link to more information about this in our next reading. Using rules like this one, we can get puppet to do a lot more than just install packages
+# for us. We can add, remove, or modify configuration files stored in the system, or change registry entries on Windows. We can also enable, disable, start, or stop the services 
+# that run on our computer. We can configure crone jobs, the scheduled tasks, add, remove, or modify Users and Groups or even execute external commands, if that's what we need
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Puppet Resources
 

@@ -114,5 +114,8 @@ if $fact['is-virtual']{
   # then the agent applies them as necessary. We're just getting started with what configuration management is and what it looks like in Puppet. But hopefully, you're starting 
   # to see how understanding these basic concepts and how turning them into practical rules can help you manage a small army of computers.
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Check out the following links for more information:
 
+# https://en.wikipedia.org/wiki/Domain-specific_language
+# http://radar.oreilly.com/2015/04/the-puppet-design-philosophy.html
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -73,6 +73,40 @@ claas timezone {
 # The provider used will depend on the resource defined and the environment where the agent is running. Puppet will normally detect this automatically without us having to do 
 # anything special. When the puppet agent processes a resource, it first decides which provider it needs to use, then passes along the attributes that we configured in the 
 # resource to that provider. The code of each provider is in charge of making our computer reflect the state requested in the resource
+   
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Puppet Classes
+ 
+# We use these classes to collect the resources that are needed to achieve a goal in a single place. For example, you could have a class that installs a package, sets the contents
+# of a configuration file, and starts the service provided by that package. 
+   
+# Let's check out an example like that. 
+
+ class ntp {
+    package { 'ntp':
+             ensure => lastest,
+            }
+    file { '/etc/ntp.conf':
+          source => 'puppet:///modules/ntp/ntp.cont'
+          replace => true,
+         }
+    service { 'ntp':
+             enable => true,
+             ensure => running,
+            }
+ }
+
+# In this case, we have a class with three resources, a package, a file, and a service. All of them are related to the Network Time Protocol, or NTP, the mechanism our computers
+# use to synchronize the clocks. Our rules are making sure that the NTP package is always upgraded to the latest version. We're setting the contents of the configuration file 
+# using the source attribute, which means that the agent will read the required contents from the specified location. And we're saying that we want the NTP service to be enabled
+# and running. By grouping all of the resources related to NTP in the same class, we only need a quick glance to understand how the service is configured and how it's supposed 
+# to work. This would make it easier to make changes in the future since we have all the related resources together. It makes sense to use this technique whenever we want to 
+# group related resources. For example, you could have a class grouping all resources related to managing log files, or configuring the time zone, or handling temporary files 
+# and directories. You could also have classes that group all the settings related to your web serving software, your email infrastructure, or even your company's firewall. 
+# We're just getting started with Puppet's basic resources and seeing how they can be applie
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Check out the following links for more information:
+
+# https://puppet.com/docs/puppet/latest/lang_resources.html
+# https://puppet.com/blog/deploy-packages-across-your-windows-estate-with-bolt-and-chocolatey/
+  #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,4 +1,5 @@
-# Google IT Automation with Python Professional Certificate hosted by Coursera
+# Google IT Automation with Python Professional Certificate 
+hosted by Coursera
 
 * Crash Course on Python
 * Using Python to Interact with the Operating System

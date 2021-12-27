@@ -47,7 +47,66 @@ with open("spider.text) as file:
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Iterating through Files
 
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Iterating through Files
+# File objects can be iterated in the same way as other Python sequences like list or strings. This is really useful when you want to process a file line by line. 
+# Say for example you want to make a whole line uppercase before printing it. You can do that with something like this.
+          
+ with open("spider.text) as file:
+           for line in file:
+                 print(line.upper())
+  
+# THE ITSY BITSY SPIDER CLIMBED UP THE WATERSPROUT
+ 
+ # code snippet will correctly open a file and print lines one by one without whitespace
+ with open("hello_world.txt") as text:
+    for line in text:
+	    print(line.strip())
+           
+# Another way we can work with the contents of the file is to read the file lines into a list. Then, we can do something with the lists like sort contents. 
+# To do that, we open the file and use the.readlines method. Let's see how that looks. 
+           
+# First, we open the file.
+file = open("spider.txt")
+           
+# Then, read all the lines.
+lines = files.readline()
+           
+# Now, we close the file.
+file.close()
 
+# Even though the file object is now closed, the lines variable has the list of lines in the file, so we can operate on it. For example, let's sort it and print it.
+lines.sort()
+print(lines)
+# ['Down came the rain\n', 'Out came the sun\n', 'The itsy bitsy spider climbed up the watersprout\n']
+           
+ # There are two things to check out on this code. First, the lines have been sorted alphabetically, so they're no longer in the order that they were in the file. 
+ # Second, we can see that Python displays a newline character using "\n" symbol when printing a list of strings. This is a way of explicitly showing that there's a 
+ # new line character in those strings. In general, to display a character that's not printable, Python uses escape sequences with backslash, like \n. 
+ # Another common escape sequence is \t, for tab. We can also use it for escaping quotes, if we have a string that contains either a single or double quote. 
+ # A quick word of caution, methods like read or readlines that read the whole file at once are useful, but we should be careful when reading the entire contents of a 
+ # file into a variable of our programs. If the file is super large, it can take a lot of our computer's memory to hold it, which can lead to poor performance. 
+ # If a file is just a few kilobytes like in our example here, it's fine to read it and process it completely in memory. But for large files, like the big log file of 
+ # hundreds and hundreds of megabytes of data, it's more efficient to process it line by line.
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Writing Files
+ 
+with open("novel.txt", "w") as file:
+           file.write("It was a dark and stormy night")
+           
+# File objects can be opened in several different modes. A mode is similar to a file permission. It governs what you can do with the file you've just opened. 
+# By default, the open function uses the r mode, which stands for read only. You get an error if you try to write to a file opened in read only mode. Since read only is the 
+# default, we don't have to pass the R as a second argument when we just want to read the file. Writing however is a whole different story. The w character tells the open 
+# function that we want to open the file for writing only. If the file doesn't exist then Python will create it. If the file does exist, then its current contents will be
+# overwritten by whatever we decide to write using our scripts. It's important to remember that when opening a file in write only mode, you can't read its contents. 
+# If you try to, the interpreter raises an error. If you want to add content to a file that already exist, you can do that by using other modes like a for appending content at 
+# the end of an existing file. Or r+ for read-write mode, where you can both read contents and overwrite it. This has tripped up a lot of us more than once. 
+# So I'll say this again. If you open a file for writing and the file already exists, the old contents will be deleted as soon as the file is opened. 
+# Yikes, imagine accidentally deleting important content in a file. So remember, double check that you're opening the right file using the right mode.
+# if you're generating a report and wants to write it out to a new file using the write, w mode, you probably want to check if the file exists, to avoid losing any previous contents
+# Along with read only, write, append, and read-write, the open function supports a bunch of other modes. 
+# You'll find all the documentation on this in the official reference, which we'll link to in the next reading
+           
+# Reading and Writing Files Cheat-Sheet
+# Check out the following link for more information:
+
+# https://docs.python.org/3/library/functions.html#open
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

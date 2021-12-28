@@ -79,10 +79,10 @@ def contents_of_file(filename):
     
     # Process each row
     for row in rows:
-      name, color, gorwth_type = row
+      name, color, type = row
 
       # Format the return string for data rows only
-      return_string += "a {} {} is {}\n".format(name, color, gorwth_type)
+      return_string += "a {} {} is {}\n".format(color, name, type)
   return return_string
 
 #Call the function
@@ -103,7 +103,7 @@ a sunflower yellow is annual'''
 # Answer
 # Create an instance of the DictWriter() class
 # Write the fieldnames parameter into the first row using writeheader()
-
+# Open the csv file using with open
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## QUESTION 4
@@ -111,6 +111,7 @@ a sunflower yellow is annual'''
 # Which of the following is true about unpacking values into variables when reading rows of a CSV file? (Check all that apply)
 
 # Answer
+# We need the same amount of variables as there are columns of data in the CSV 
 # Rows can be read using both csv.reader and csv.DictReader
 # An instance of the reader class must be created first
 

@@ -8,4 +8,6 @@
   * working_with_files.py
   * practicequiz_managing_file_directories.py
 * Reading and Writing CSV Files
+* reading_writing_csv.py
+* Practice Quiz: Reading & Writing CSV Files
 * Module Review

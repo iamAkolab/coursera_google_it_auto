@@ -10,3 +10,4 @@ into what branches are, when and how to use them and how to deal with merge conf
 # Skipping the Staging Area
 When we covered the basic Git workflow, we called out that the process is usually to make changes, stage them, and then commit them. The separate step between staging and 
 committing allows us to stage several changes in one commit.
+The -a flag lets us add and commit in the same step.

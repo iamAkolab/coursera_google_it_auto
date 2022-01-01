@@ -1,11 +1,11 @@
-diff
+# diff
 diff is used to find differences between two files. On its own, it’s a bit hard to use; instead, use it with diff -u to find lines which differ in two files:
 
-diff -u
+# diff -u
 diff -u is used to compare two files, line by line, and have the differing lines compared side-by-side in the same output. See below:
 
 '''
-~$ cat menu1.txt 
+# ~$ cat menu1.txt 
 Menu1:
 
 Apples
@@ -13,7 +13,7 @@ Bananas
 Oranges
 Pears
 
-~$ cat menu2.txt 
+# ~$ cat menu2.txt 
 Menu:
 
 Apples
@@ -21,7 +21,7 @@ Bananas
 Grapes
 Strawberries
 
-~$ diff -u menu1.txt menu2.txt 
+# ~$ diff -u menu1.txt menu2.txt 
 --- menu1.txt   2019-12-16 18:46:13.794879924 +0900
 +++ menu2.txt   2019-12-16 18:46:42.090995670 +0900
 @@ -1,6 +1,6 @@
@@ -38,7 +38,7 @@ Strawberries
 '''
 
 
-Patch
+# Patch
 Patch is useful for applying file differences. See the below example, which compares two files. 
 The comparison is saved as a .diff file, which is then patched to the original file!
 
@@ -68,7 +68,7 @@ It's a wonderful day!
 
 There are some other interesting patch and diff commands such as patch -p1, diff -r !
 
-Check them out in the following references:
+# Check them out in the following references:
 
 http://man7.org/linux/man-pages/man1/diff.1.html
 

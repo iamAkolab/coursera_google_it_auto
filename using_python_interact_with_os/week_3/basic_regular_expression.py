@@ -40,6 +40,35 @@ print(result)
 
 
 # Let's practice the special characters that we've seen up until now with a few examples.
+
+print(re.search(r"^X", "xenon"))
+# <re.Match object; span=(0,1), match='x'>
+
+# Here, we told the Storage function to use the circumflex X pattern on the string xenon. We can see that it matched at the beginning of the line on our X as we expected. 
+# What happens if we use a dot which can match any character?
+
+print(re.search(r"aza", "maze"))
+# <re.Match object; span=(1,4), match='aza'>
+
+# Now we're using p.ng as a search pattern. It matches the word penguin that we're passing. In the match object ,we see the matching string is peng. 
+# Let's try it out with a couple other strings.
+
+print(re.search(r"p.ng", "penguin"))
+# <re.Match object; span=(0,4), match='peng'>
+
+
+print(re.search(r"p.ng", "sponge"))
+# <re.Match object; span=(1,5), match='pong'>
+
+print(re.search(r"p.ng", "clapping"))
+# <re.Match object; span=(4,8), match='ping'>
+
+# Here we can see the match attribute always has a value of the actual sub string that match the search pattern. The span attribute, indicates the range where the sub string
+# can be found in the string we passed. We can also pass additional options to the search function. 
+
+# For example, if we want our match to be case insensitive, we can do this by passing the re.IGNORECASE option
+print(re.search(r"p.ng", "Pangaea", re.IGNORECASE))
+# <re.Match object; span=(4,8), match='Pang'>
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##
 

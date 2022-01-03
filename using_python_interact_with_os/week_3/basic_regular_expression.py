@@ -20,7 +20,26 @@ print(result)
 # Great. Our result is a match object. The output we get when calling print already shows some interesting information, like the position in the string that matched ,and what 
 # the actual matching string was. Let's try this out again with different word.
 
-# 
+# Let's try this out again with different word.
+
+result = re.search(r"aza", "bazar")
+print(result)
+# <re.Match object; span=(1,4), match='aza'>
+
+# In this case, we can see that the span attribute is different. That's because the match sub-string is in a different position inside the string. The match sub-string is still 
+# same though, because we're matching with a plane string. No special syntax yet. What do you think will happen if we pass a string that doesn't match the expression? 
+
+# Let's try and find out
+
+result = re.search(r"aza", "maze")
+print(result)
+# None
+
+#  If the expression doesn't match the string that we pass, we get none as a result. 
+# Remember, none is a special value that Python uses that show that there's none actual value there.
+
+
+# Let's practice the special characters that we've seen up until now with a few examples.
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##
 

@@ -1,4 +1,4 @@
-# Intro to Module 2: Using Git Locally
+# 1.0 Intro to Module 2: Using Git Locally
 
 We'll start by learning some handy shortcuts and looking into how we can get more info out of our version control system. Then we'll experience the true power of Git by seeing how
 we can undo some of our changes. The ability to revert previous changes is one of the most useful aspects of version control systems. Depending on what needs to be undone, there's 
@@ -7,7 +7,7 @@ snapshot. We'll look into all these techniques and dive into when to use each of
 work on an experimental feature without affecting the main code of our project. Support separate versions of a program that can't be merged together and much more. We'll dive 
 into what branches are, when and how to use them and how to deal with merge conflicts.
 
-# Skipping the Staging Area
+# 2.0 Skipping the Staging Area
 When we covered the basic Git workflow, we called out that the process is usually to make changes, stage them, and then commit them. The separate step between staging and 
 committing allows us to stage several changes in one commit.
 The -a flag lets us add and commit in the same step.  At first, you might think that git commit dash a is just a shortcut for git add followed by git commit but that's not exactly true. Git commit -a doesn't work on new files because those are untracked. Instead, git commit -a is a shortcut to stage any changes to tracked files and commit them in one step. If the modified file has never been committed to the repo, we'll still need to use git add to track it first.
@@ -46,3 +46,6 @@ These shortcuts are useful when making small changes that we know we'll want to 
 # $ log
 
 So let's clarify. Git uses the head alias to represent the currently checked out snapshot of your project. This lets you know what the contents of your working directory should be. In this case, the current snapshot is the latest commit in the project. We'll soon learn about branches. In that case, head can be a commit in a different branch of the project. We can even use git to go back in time and have head representing old commit from before the latest changes were applied. In all cases, head is used to indicate what the currently checked out snapshot is. This is how git marks your place in the project. Think about it as a bookmark that you can use to keep track of where you are. Even if you have multiple books to read, the bookmark allows you to pick up right where you left off. When you run git commands like diff, branch, or status, git will use the head bookmark as a basis for whatever operation it's performing. We'll see Head used when we learn how to undo things and perform rollbacks.
+
+
+# 3.0

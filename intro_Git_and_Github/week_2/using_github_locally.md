@@ -12,9 +12,9 @@ When we covered the basic Git workflow, we called out that the process is usuall
 committing allows us to stage several changes in one commit.
 The -a flag lets us add and commit in the same step.  At first, you might think that git commit dash a is just a shortcut for git add followed by git commit but that's not exactly true. Git commit -a doesn't work on new files because those are untracked. Instead, git commit -a is a shortcut to stage any changes to tracked files and commit them in one step. If the modified file has never been committed to the repo, we'll still need to use git add to track it first.
 
-## $ cd scripts$
+### $ cd scripts$
 
-## $ atom all_checks.py
+### $ atom all_checks.py
 
 '''
 #!/usr/bin/env python3
@@ -37,13 +37,13 @@ main()
 Now that we've made the change, we're ready to try out the new -a flag. We'll also use the -m flag to add the commit message directly. This time, we'll say that we're calling check underscore reboot and exiting with one on the error condition
 
 
-## $ git commit -a -m "Check_reboot from main, exit with 1 on error"
+### $ git commit -a -m "Check_reboot from main, exit with 1 on error"
 [master fdb0987f] Call back check_reboot from main, exit with 1 on error
 1 file changed, 4 insertions(+), 1 deletion(-)
 
 These shortcuts are useful when making small changes that we know we'll want to commit directly without keeping them in the staging area and having to write long and complex descriptions. Keep in mind that when you use the -m shortcut, you can only write short messages and can't use the best practices regarding commit descriptions that we talked about earlier. So it's best reserved for truly small changes that don't require extra context or explanation, short and sweet. Heads up, when you use the -a shortcut, you skip the staging area. Meaning, you can't add any other changes before creating the commit. So you need to be sure that you've already included everything you want to include in that commit. In the end, using a shortcut like -a is just like using the regular commit workflow. The commit will show up in the log along with the message just as usual
 
-## $ log
+### $ log
 
 So let's clarify. Git uses the head alias to represent the currently checked out snapshot of your project. This lets you know what the contents of your working directory should be. In this case, the current snapshot is the latest commit in the project. We'll soon learn about branches. In that case, head can be a commit in a different branch of the project. We can even use git to go back in time and have head representing old commit from before the latest changes were applied. In all cases, head is used to indicate what the currently checked out snapshot is. This is how git marks your place in the project. Think about it as a bookmark that you can use to keep track of where you are. Even if you have multiple books to read, the bookmark allows you to pick up right where you left off. When you run git commands like diff, branch, or status, git will use the head bookmark as a basis for whatever operation it's performing. We'll see Head used when we learn how to undo things and perform rollbacks.
 

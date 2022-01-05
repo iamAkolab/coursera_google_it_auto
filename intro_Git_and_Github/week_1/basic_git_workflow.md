@@ -1,8 +1,8 @@
 First, all the files we want to manage with Git must be a part of a Git repository. We initialize a new repository by running the git init command in any file system directory.
 
-$ mkdir scripts
-$ cd scripts
-$ git init
+### $ mkdir scripts
+### $ cd scripts
+### $ git init
 
 $ git config -l 
 There's a bunch of info in there, and we won't cover all of it. For now, pay special attention to the user.email and the user.name lines
@@ -18,14 +18,14 @@ main
 '''
 
 
-$ chdmod +x all_checks.py
-$ git status
+### $ chdmod +x all_checks.py
+### $ git status
 the file is untracked
 
-$ git add all_checks.py
+### $ git add all_checks.py
  move from untracked to stage status and a change it from modified stage to staged state
 
-$ git commit 
+### $ git commit 
 then add comments with nano 'create an empty all_checks.py'
 
 

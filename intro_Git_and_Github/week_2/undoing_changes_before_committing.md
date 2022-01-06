@@ -104,3 +104,29 @@ Everything ok.
 
 Done and done. With that, we've demonstrated how we can use git checkout to revert changes to modify files before they get staged. This command will restore the file to the 
 latest storage snapshot, which can be either committed or staged. 
+
+    
+    
+What if you added the changes to the staging area already? Don't stress. If we realize we've added something to the staging area that we didn't actually want to commit, we can unstage our changes by using the git reset command. Staging changes that we don't actually intend to commit happens all the time. Especially if we use a command like git add star, where the star is a file glob pattern used in Bash that expands to all files. This command will end up adding any change done in the working tree to the staging area. While sometimes that might be what we want, it can also lead to some surprises. Let's try it out with an example. 
+    
+    
+
+### ~/scripts$ ./all_checks.py > output.txt
+### ~/scripts$ git add *
+### ~/scripts$ git status
+On branch master
+Changes to be committed:
+    (use "git reset HEAD <file>.." to unstage)
+    
+    modified: all_checks.py
+    new file: output.txt
+
+    
+First, we'll pretend we're trying to debug a problem in our script. For that, we create a temporary file with the output of our script. Then, we'll add all unstaged changes in our working tree using git add star. Finally, check the status using git status. We can see that this output file, which was supposed to be a temporary file for debugging, has now been staged in our repo but we didn't want to commit it. Conveniently, the git status command tells us how to unstage the file right there in the output. The example output mentions the head alias. Remember what that means? That's right. It's the current checked out snapshot. So by running the suggested command, we're resetting our changes to whatever's in the current snapshot. Let's try it out
+    
+### ~/scripts$ git reset HEAD output.txt
+### ~/scripts$ git status
+    
+The file is once again untracked in our working tree and no longer staged. You can think of reset as the counterpart to add. With add, you can well add changes to the staging area. With reset, you remove changes from the staging area. You can use git reset dash p to get git to ask you which specific changes you want to reset. Get it. But wait, let's remember to commit our typo fix.
+    
+With that, we've seen how we can revert unstaged and stage changes.

@@ -12,7 +12,7 @@
 
 
 
-There are many useful git cheatsheets online as well. Please take some time to research and study a few, such as this one.
+There are many useful git cheatsheets online as well. Please take some time to research and study a few, such as this one (https://training.github.com/downloads/github-git-cheat-sheet.pdf).
 
 ## .gitignore files
 .gitignore files are used to tell the git tool to intentionally ignore some files in a given Git repository. For example, this can be useful for configuration files or metadata files that a user may not want to check into the master branch. Check out more at: https://git-scm.com/docs/gitignore.

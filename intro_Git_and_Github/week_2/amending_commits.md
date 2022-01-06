@@ -23,7 +23,7 @@ We can fix it. We'll start by adding the missing file and then amending our comm
 We can fix it. We'll start by adding the missing file and then amending our commit.
 
 ### ~/scripts$ git add gather-informattion.sh
-###~/scripts$ git commit --amend 
+### ~/scripts$ git commit --amend 
 
 We call git commit --amend and an editor opened up showing the commit message and the stats about the commit that we're working with. 
 The list of added files for this commit now includes both files that we wanted to add. Yay. Now that the files have been added, 

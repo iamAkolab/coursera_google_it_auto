@@ -301,7 +301,13 @@ print(re.search(r"\w*", "And this is another"))
 print(re.search(r"\w*", "And_this_is_another"))
 # <re.Match object; span=(0, 19), match='And_this_is_another'>
 
+# As we said, \w matches letters, numbers, and underscores. In the first example, our pattern matched the first four letters until the space because spaces aren't part of that 
+# set of characters. While in the second example, it matched the whole string. 
+# There's also \d for matching digits, \s for matching whitespace characters like space, tab or new line, \b for word boundaries and a few others
 
+# You can always consult our cheat sheet or other similar references that tell you which sequence represents which characters. Another great resource for testing out your 
+# regular expressions is a website called regex101.com. You can use this to try out your regexes, analyze each part of the expression, and figure out what's up with them 
+# when they don't work.
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## QUESTION
 
@@ -328,8 +334,9 @@ False
 You got it! There's no escaping your regular expression
 expertise!
 '''
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-##
+## 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##

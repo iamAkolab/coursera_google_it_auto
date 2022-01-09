@@ -103,12 +103,12 @@ flirts
 # We could use this, for example, to look for entries in a log file that match a certain format or to find rows in a CSV file that share the same characteristics even if they 
 # are not exactly the same.
 
-#########################################################################
+######################################################################################################
 # Using the terminal, which of the following commands will correctly use grep to find the words “sling” and “sting” (assuming they are in our file, file.txt)?
 
 user@ubuntu:~$ grep s.ing /usr/file.txt
 # Nice work! In regex, a dot is a wildcard, so it can represent any character. This command will print both “sting” and “sling”, if they are in the file.
-########################################################################
+#####################################################################################################
 
 # Other easy examples of special characters that we can use in a irregular expressions are the caret, or circumflex and the dollar sign anchor characters. These tell us where in
 # the line the regex should match from. The circumflex indicates the beginning and the dollar sign indicates the end of the line. For example, to look for all the words that 

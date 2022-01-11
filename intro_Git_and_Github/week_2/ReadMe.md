@@ -6,4 +6,6 @@
 * Undoing Things
   * undoing_changes_before_committing.md
 * Branching and Merging
+  * branches.md
+  * merges.md
 * Module Wrap Up

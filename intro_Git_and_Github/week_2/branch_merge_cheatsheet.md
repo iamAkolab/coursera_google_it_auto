@@ -8,4 +8,4 @@
 | git checkout -b <branch>   |  Creat (es a new branch and switches to it. (https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt--bltnewbranchgt) |   
 | git merge <branch> | SimMerge joins branches together. (https://git-scm.com/docs/git-merge) |   
 | git merge --abort      | 	If there are merge conflicts (meaning files are incompatible), --abort can be used to abort the merge action.   |   
-| git log --graph --oneline      | This shows a summarized view of the commit history for a repo.  (ht)tps://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)    |   
+| git log --graph --oneline      | This shows a summarized view of the commit history for a repo.  (https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)    |   

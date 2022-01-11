@@ -8,4 +8,5 @@
 * Branching and Merging
   * branches.md
   * merges.md
+  * branch_merge_cheatsheet.md
 * Module Wrap Up

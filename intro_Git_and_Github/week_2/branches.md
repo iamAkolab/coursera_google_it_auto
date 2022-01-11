@@ -1,4 +1,4 @@
-# Branches 
+# 1.0 Branches 
 
 Branches are an important part of the Git work flow. 
 
@@ -23,3 +23,24 @@ is ready to be deployed, we would merge those changes back into the master branc
 
 In the next few videos, we'll look into how to create new branches and merge their content into the master branch. We'll also go over what to do if you run into any scary merge
 conflicts. 
+
+# 2.0 Creating New Branches
+As branches are essential to how work is done in git, there's tons of different ways to work with them. We can use the git branch command to list, create, delete, and manipulate branches. Running git branch by itself will show you a list of all the branches in your repository. Let's try it out in our checks repo.
+
+### user@ubuntu:~$ cd checks
+### user@ubuntu:~/checks$ git branch
+*master
+
+
+Our list is looking pretty empty right now, but don't worry. Creating a branch is a snap. We do it by calling git branch with the name of the new branch Let's create a new feature branch and then list the branches again with git branch. 
+
+### user@ubuntu:~/checks$ git branch new-feature
+### user@ubuntu:~/checks$ git branch
+*master
+new-feature
+
+Our new branch was created based on the value of head. Remember that this might not necessarily be the master branch. The list we get shows that we're still on the master branch. We can tell because the current branch is indicated in the command's output with an asterisk in a different color.
+
+Right now we want to switch to a new branch. To do that, we'll need to use the git checkout command. We saw earlier how we can use git checkout to restore a modified file back to the latest commit. Checking out branches is similar in that, the working tree is updated to match the selected branch including both the files and the git history. It might help to remember that we use git checkout to check out the latest snapshot for both files and for branches. All right. Let's switch to our new feature branch by calling git checkout new feature, and then listing our branches once again.
+
+Before we were working on the master branch but now that we've changed to our new branch, the star has moved to new feature. Creating a branch and switching to it immediately is a pretty common task. So common that git gives us a useful shortcut to create a new branch and to switch to it in a single command. We can use the git checkout -b new branch to do this. Take a look.

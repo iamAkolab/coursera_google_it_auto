@@ -10,3 +10,4 @@
   * merges.md
   * branch_merge_cheatsheet.md
 * Module Wrap Up
+  * qwiklabs_merging_branches_in_git.py.py

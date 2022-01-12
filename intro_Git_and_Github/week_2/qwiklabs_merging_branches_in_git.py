@@ -476,6 +476,9 @@ Date:   Wed Jan 8 14:09:39 2020 +0530
     Rename item variable to food_item.
 '''
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 
+## Congratulations!
+
+#In this lab, you successfully created a branch from the master branch to add a new feature. You also rolled back a commit to where the script worked fine, 
+# and then merged it to the master branch. This will help as you work with colleagues who are simultaneously on the same repository.
+ 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-##

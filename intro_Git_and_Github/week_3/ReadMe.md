@@ -1,8 +1,8 @@
 # Lesson Order
 
 * Introduction to Github
-  * Intro to Module 3: Working with Remotes
-  * what is github
+  * working_with_remote.md
+  * what_is_github.md
 * Using a Remote Repository
   * u
 * Solving Conflicts

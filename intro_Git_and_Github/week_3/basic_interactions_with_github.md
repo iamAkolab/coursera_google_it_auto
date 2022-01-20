@@ -1,5 +1,6 @@
 # Basic Interaction with GitHub
 
+
 To use it, you first need to create an account on the site. Once you have your account, you're ready to create your brand new repository on GitHub.
 
 We'll start by clicking the Create a repository link on the left. This will take us to the repo creation wizard. The wizard is pretty straightforward. 

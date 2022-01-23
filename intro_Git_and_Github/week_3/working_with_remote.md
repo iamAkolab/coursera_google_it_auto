@@ -14,7 +14,7 @@
  By the end of the module you'll be able to collaborate with friends and colleagues just like I did
 
 
-# Intro to Module 3: Working with Remotes
+# What is Remotes
 
 When we clone the newly created GitHub repository, we had our local Git Repo interact with a remote repository. 
 Remote repositories are a big part of the distributed nature of Git collaboration. It let lots of developers contribute to a project from their own workstations making changes to local copies of the project independently of one another. When they need to share their changes, they can issue git commands to pull code from a remote repository or push code into one. There are a bunch of ways to host remote repositories.

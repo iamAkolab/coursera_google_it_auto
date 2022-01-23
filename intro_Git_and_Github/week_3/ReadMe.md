@@ -1,8 +1,9 @@
 # Lesson Order
 
 * Introduction to Github
-  * working_with_remote.md
   * what_is_github.md
+  * basic_interactions_with_github.md
+  * basic_interactions_with_github_Cheatcode.md
 * Using a Remote Repository
   * working_with_remote.md
 * Solving Conflicts

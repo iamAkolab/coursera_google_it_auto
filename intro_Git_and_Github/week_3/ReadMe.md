@@ -7,6 +7,8 @@
 * Using a Remote Repository
   * working_with_remote.md
   * fetching_new_changes.md
+  * updating_local_repo.md
+  * git_remotes_CheatSheets.md
 * Solving Conflicts
   * u
 * Module Wrap Up

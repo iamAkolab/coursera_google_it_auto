@@ -54,7 +54,7 @@ They'll usually point at the same place. But in some cases, you can have the fet
 While this is not the typical usage, it can be useful when collaborating with different teams on projects that are related to each other. We won't look at how to do that here, but we'll include a link for more information in the next reading. If we want to get even more information about our remote, we can call git remote show origin.
 
 $ user@ubuntu:~/health-checks$ git remote show origin
-* remote origin
+. remote origin
 Fetch URL: https://github.com/redquionoa/health-checks.git 
 Push URL: https://github.com/redquionoa/health-checks.git 
 HEAD branch: master

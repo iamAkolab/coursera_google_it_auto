@@ -11,5 +11,6 @@
   * git_remotes_CheatSheets.md
 * Solving Conflicts
   * u
+  * conflict_resolution_cheatsheet.md
 * Module Wrap Up
   * qwiklabs

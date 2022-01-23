@@ -4,7 +4,7 @@
   * working_with_remote.md
   * what_is_github.md
 * Using a Remote Repository
-  * u
+  * working_with_remote.md
 * Solving Conflicts
   * u
 * Module Wrap Up

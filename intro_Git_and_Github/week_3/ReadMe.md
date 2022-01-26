@@ -10,7 +10,7 @@
   * updating_local_repo.md
   * git_remotes_CheatSheets.md
 * Solving Conflicts
-  * u
+  * unli
   * conflict_resolution_cheatsheet.md
 * Module Wrap Up
   * qwiklabs

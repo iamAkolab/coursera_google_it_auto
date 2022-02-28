@@ -1,4 +1,4 @@
-# Conflict Resolution Cheat Sheet
+# Conflict Resolution Cheat Sheet.
 
 Merge conflicts are not uncommon when working in a team of developers, or on Open Source Software. 
 Fortunately, GitHub has some good documentation on how to handle them when they happen:

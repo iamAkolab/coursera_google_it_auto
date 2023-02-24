@@ -8,14 +8,14 @@ $ git config -l
 There's a bunch of info in there, and we won't cover all of it. For now, pay special attention to the user.email and the user.name lines
 
 # create the all_check.py file
-'''
+```
 #!/usr/bin/env python3
 
 def main():
     pass
     
 main
-'''
+```
 
 
 ### $ chdmod +x all_checks.py
@@ -34,7 +34,7 @@ The commit is aborted
 
 
 # modify the all_check.py file
-'''
+```
 #!/usr/bin/env python3
 
 import os
@@ -55,7 +55,7 @@ def main():
  
     
 main
-'''
+```
 
 # Anatomy of a Commit Message 
  A commit message is generally broken up into a few sections. The first line is a short summary of the commit followed by a blank line. This is followed by a full description of the changes which details why they're necessary and anything that might be especially interesting about them or difficult to understand. When you run the git commit command, Git will open up a text editor of your choice so you can write your commit message
